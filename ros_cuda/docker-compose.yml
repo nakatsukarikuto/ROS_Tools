@@ -1,0 +1,17 @@
+version: '2.21.0'
+
+services:
+  cuda-for-ros:
+    build: 
+      context: .
+      dockerfile: Dockerfile.roscuda
+    container_name: cuda-ros
+    volumes:
+      - .:/work
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
