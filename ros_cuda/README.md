@@ -1,4 +1,4 @@
-# Docekr上のcuda環境構築ファイル(動作未確認)
+# Docekr上のcuda環境構築ファイル
 * てきとうに切り貼りして使ってください．
 * Dockerfile1行目の`FROM nvidia/cuda:12.2.2-devel-ubuntu20.04`のcudaバージョンは，
     * nvidia-smiコマンドで出てくるcudaバージョンと，小数点第一位までは合わせてください．
