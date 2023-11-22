@@ -49,7 +49,7 @@ class CLIP():
         plt.xlabel("time [s]")
         plt.ylabel("probs")
         plt.hlines(y=0.65, xmin=0, xmax=max_value, linestyles=":",colors="red", linewidth = 1)
-        plt.savefig("analyze_boiling.pdf")
+        plt.savefig("analyze__.pdf")
         plt.show()
 
     def judgement(self):
